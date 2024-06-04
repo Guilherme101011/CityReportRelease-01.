@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/secondactivity_background"
+    android:padding="70dp"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <!-- Subtítulo -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bem vindo, Guilherme!"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="8dp"/>
+
+    <!-- Texto "Registrar ocorrência" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Registrar ocorrência"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:padding="16dp"/>
+
+    <!-- Texto "Local da ocorrência" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Local da ocorrência:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <!-- Campo para escrever o texto do local da ocorrência -->
+        <EditText
+            android:id="@+id/etLocation"
+            android:hint="ocorrência"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/rounded_corner"
+            android:padding="40dp"/>
+
+    <!-- Texto "Nome do solicitante" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome do solicitante:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <!-- Campo para escrever o nome do solicitante -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/rounded_corner"
+        android:hint="Nome"
+        android:textSize="16sp"
+        android:padding="18dp"/>
+
+    <!-- Texto "CPF" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CPF:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:padding="2dp"/>
+
+        <!-- Campo para escrever o CPF -->
+        <EditText
+            android:id="@+id/etCPF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/rounded_corner"
+            android:textSize="16sp"
+            android:hint="CPF"
+            android:padding="30dp"/>
+
+
+    <!-- Texto "Descrição" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descrição:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <!-- Campo para escrever a descrição -->
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/rounded_corner"
+        android:hint="Descrição"
+        android:padding="25dp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+    <!-- Botão "Reportar" -->
+    <Button
+        android:id="@+id/reportar_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reportar"
+        android:padding="16dp"/>
+
+</LinearLayout>
+
+</RelativeLayout>
